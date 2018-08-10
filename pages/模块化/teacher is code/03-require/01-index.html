@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./requirejs/require.js"></script>
+    <script>
+        // 开始配置 模块的 路径与其他信息
+        // ( 这一段代码如果在实际项目中也可以独立放到文件里, 引入 )
+        require.config({
+            // 基础路径: 
+            baseUrl: './mymodules'
+            // 注: 实际开发一般会使用从网站根目录开始的路径
+
+
+            // 配置各个模块的名字与路径
+            // 其语法为 
+            // 名字: '路径'
+            // 注意: 模块化方案中, 不使用 js 后缀名
+            , paths: {
+                a: 'moduleA'
+            }
+
+        });
+
+
+
+        // 使用模块
+        require( [ 'a' ] );
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,662 @@
+<html> 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>é€šç”¨è½®æ’­ç»„ä»¶æ–‡æ¡£ - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../res.layui.com/layui/dist/css/layui.css-t=1531663423583" tppabs="http://res.layui.com/layui/dist/css/layui.css?t=1531663423583"  media="all">
+  <link rel="stylesheet" href="../../../res.layui.com/static/css/global.css-t=1531663423583-6" tppabs="http://res.layui.com/static/css/global.css?t=1531663423583-6" media="all">
+</head>
+<body>
+<div class="layui-header header header-doc" summer>
+  <div class="layui-main">
+    <a class="logo" href="javascript:if(confirm('http://www.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">
+      <img src="../../../res.layui.com/static/images/layui/logo.png" tppabs="http://res.layui.com/static/images/layui/logo.png" alt="layui">
+    </a>
+    <div class="layui-form component">
+      <select lay-search lay-filter="component">
+        <option value="">æœç´¢ç»„ä»¶æˆ–æ¨¡å—</option>
+        <option value="element/layout.html">grid æ …æ ¼å¸ƒå±€</option>
+        <option value="element/layout.html#admin">admin åå°å¸ƒå±€</option>
+        <option value="element/color.html">color é¢œè‰²</option>
+        <option value="element/icon.html">iconfont å­—ä½“å›¾æ ‡</option>
+        <option value="element/anim.html">animation åŠ¨ç”»</option>
+        <option value="element/button.html">button æŒ‰é’®</option>
+        <option value="element/form.html">form è¡¨å•ç»„</option>
+        <option value="element/form.html#input">input è¾“å…¥æ¡†</option>
+        <option value="element/form.html#select">select ä¸‹æ‹‰é€‰æ‹©æ¡†</option>
+        <option value="element/form.html#checkbox">checkbox å¤é€‰æ¡†</option>
+        <option value="element/form.html#switch">switch å¼€å…³</option>
+        <option value="element/form.html#radio">radio å•é€‰æ¡†</option>
+        <option value="element/form.html#textarea">textarea æ–‡æœ¬åŸŸ</option>
+        <option value="element/nav.html">nav å¯¼èˆªèœå•</option>
+        <option value="element/nav.html#breadcrumb">breadcrumb é¢åŒ…å±‘</option>
+        <option value="element/tab.html">tabs é€‰é¡¹å¡</option>
+        <option value="element/progress.html">progress è¿›åº¦æ¡</option>
+        <option value="element/collapse.html">collapse æŠ˜å é¢æ¿/æ‰‹é£ç´</option>
+        <option value="element/table.html">table è¡¨æ ¼å…ƒç´ </option>
+        <option value="element/badge.html">badge å¾½ç« </option>
+        <option value="element/timeline.html">timeline æ—¶é—´çº¿</option>
+        <option value="element/auxiliar.html#blockquote">blockquote å¼•ç”¨å—</option>
+        <option value="element/auxiliar.html#fieldset">fieldset å­—æ®µé›†</option>
+        <option value="element/auxiliar.html#hr">hr åˆ†å‰²çº¿</option>
+        
+        <option value="modules/layer.html">layer å¼¹å‡ºå±‚/å¼¹çª—ç»¼åˆ</option>
+        <option value="modules/laydate.html">laydate æ—¥æœŸæ—¶é—´é€‰æ‹©å™¨</option>
+        <option value="modules/layim.html">layim å³æ—¶é€šè®¯/èŠå¤©</option>
+        <option value="modules/laypage.html">laypage åˆ†é¡µ</option>
+        <option value="modules/laytpl.html">laytpl æ¨¡æ¿å¼•æ“</option>
+        <option value="modules/form.html">form è¡¨å•æ¨¡å—</option>
+        <option value="modules/table.html">table æ•°æ®è¡¨æ ¼</option>
+        <option value="modules/upload.html">upload æ–‡ä»¶/å›¾ç‰‡ä¸Šä¼ </option>
+        <option value="modules/element.html">element å¸¸ç”¨å…ƒç´ æ“ä½œ</option>
+        <option value="modules/rate.html">rate è¯„åˆ†</option>
+        <option value="modules/carousel.html">carousel è½®æ’­/è·‘é©¬ç¯</option>
+        <option value="modules/layedit.html">layedit å¯Œæ–‡æœ¬ç¼–è¾‘å™¨</option>
+        <option value="modules/tree.html">tree æ ‘å½¢èœå•</option>
+        <option value="modules/flow.html">flow ä¿¡æ¯æµ/å›¾ç‰‡æ‡’åŠ è½½</option>
+        <option value="modules/util.html">util å·¥å…·é›†</option>
+        <option value="modules/code.html">code ä»£ç ä¿®é¥°</option>
+      </select>
+    </div>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" tppabs="http://www.layui.com/doc/">æ–‡æ¡£<!--  --></a> 
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:if(confirm('http://www.layui.com/demo/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/demo/'" tppabs="http://www.layui.com/demo/">ç¤ºä¾‹<!-- <span class="layui-badge-dot"></span> --></a>
+      </li> 
+      
+      <li class="layui-nav-item layui-hide-xs">
+        <a href="javascript:if(confirm('http://fly.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">ç¤¾åŒº</a>
+      </li>
+      
+      
+      <li class="layui-nav-item">
+        <!--<span class="layui-badge-dot" style="margin: -4px 3px 0;"></span>-->
+        <a href="javascript:;">å‘¨è¾¹</a>
+        <dl class="layui-nav-child">
+          <dd class="layui-hide-sm layui-show-xs"><a href="javascript:if(confirm('http://fly.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">ç¤¾åŒºäº¤æµ</a><hr></dd>
+          <dd><a href="javascript:if(confirm('http://layim.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://layim.layui.com/'" tppabs="http://layim.layui.com/" target="_blank">å³æ—¶èŠå¤©</a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/admin/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/" target="_blank">åå°æ¨¡æ¿</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/fly/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/template/fly/'" tppabs="http://www.layui.com/template/fly/" target="_blank">ç¤¾åŒºæ¨¡æ¿</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/xianyan/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/template/xianyan/'" tppabs="http://www.layui.com/template/xianyan/" target="_blank">è½»åšå®¢æ¨¡æ¿<span class="layui-badge-dot"></span></a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/alone.html  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/alone.html'" tppabs="http://www.layui.com/alone.html" target="_blank">ç‹¬ç«‹ç»„ä»¶</a></dd>
+          <dd><a href="javascript:if(confirm('http://fly.layui.com/jie/24209/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/24209/'" tppabs="http://fly.layui.com/jie/24209/" target="_blank">Axureç»„ä»¶</a></dd>
+        </dl>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs" lay-unselect>
+        <a href="javascript:if(confirm('http://www.layui.com/admin/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/">å®˜æ–¹åå°æ¨¡æ¿<span class="layui-badge-dot"></span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- è®©IE8/9æ”¯æŒåª’ä½“æŸ¥è¯¢ï¼Œä»è€Œå…¼å®¹æ …æ ¼ -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--> 
+<ul class="site-dir">
+  <li><a href="#use"><cite>å¿«é€Ÿä½¿ç”¨</cite></a></li>
+  <li><a href="#options"><cite>åŸºç¡€å‚æ•°é€‰é¡¹</cite></a></li>
+  <li><a href="#onchange"><cite>åˆ‡æ¢äº‹ä»¶</cite></a></li>
+  <li><a href="#reload"><cite>é‡ç½®è½®æ’­</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <div class="layui-form" style="height: 38px; margin: 10px 13px 0 0;">
+    <select lay-filter="tabVersion">
+      <option value="new">2.x</option>
+      <option value="v1">1.0.9</option>
+    </select>
+  </div>
+  <ul class="layui-tree">
+  
+    <li><h2>åŸºç¡€è¯´æ˜</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" tppabs="http://www.layui.com/doc/">
+        <cite>å¼€å§‹ä½¿ç”¨</cite>
+        <em>Getting Started</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" tppabs="http://www.layui.com/doc/base/infrastructure.html">
+        <cite>åº•å±‚æ–¹æ³•</cite>
+        <em>åŸºç¡€æ”¯æ’‘</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" tppabs="http://www.layui.com/doc/base/element.html">
+        <cite>é¡µé¢å…ƒç´ </cite>
+        <em>è§„èŒƒ / å…¬å…±ç±» / å±æ€§</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" tppabs="http://www.layui.com/doc/base/modules.html">
+        <cite>æ¨¡å—è§„èŒƒ</cite>
+        <em>ä½¿ç”¨ / æ‰©å±•</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html" tppabs="http://www.layui.com/doc/base/faq.html">
+        <cite>å¸¸è§é—®é¢˜</cite>
+        <em>FAQ</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/changelog.html" tppabs="http://www.layui.com/doc/base/changelog.html">
+        <cite>æ›´æ–°æ—¥å¿—</cite>
+        
+        <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+      </a>
+    </li>
+    
+    <li><h2>é¡µé¢å…ƒç´ </h2></li>
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/layout.html" tppabs="http://www.layui.com/doc/element/layout.html">
+        <cite>å¸ƒå±€</cite>
+        <em>æ …æ ¼ / åå°å¸ƒå±€</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/color.html" tppabs="http://www.layui.com/doc/element/color.html">
+        <cite>é¢œè‰²</cite>
+        <em>ä¸»é¢˜è‰²è®¾è®¡æ„Ÿ / å†…ç½®èƒŒæ™¯è‰²</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/icon.html" tppabs="http://www.layui.com/doc/element/icon.html">
+        <cite>å›¾æ ‡</cite>
+        
+          <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+        <em>å­—ä½“å›¾æ ‡</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/anim.html" tppabs="http://www.layui.com/doc/element/anim.html">
+        <cite>åŠ¨ç”»</cite>
+        <em>å†…ç½®çš„CSS3åŠ¨ç”»ç±»</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/button.html" tppabs="http://www.layui.com/doc/element/button.html">
+        <cite>æŒ‰é’®</cite>
+        <em>buttonç»„</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/form.html" tppabs="http://www.layui.com/doc/element/form.html">
+        <cite>è¡¨å•</cite>
+        <em>formå…ƒç´ é›†åˆ</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/nav.html" tppabs="http://www.layui.com/doc/element/nav.html">
+        <cite>å¯¼èˆª</cite>
+        <em>èœå• / é¢åŒ…å±‘</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/tab.html" tppabs="http://www.layui.com/doc/element/tab.html">
+        <cite>é€‰é¡¹å¡</cite>
+        <em>Tabs åˆ‡æ¢</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/progress.html" tppabs="http://www.layui.com/doc/element/progress.html">
+        <cite>è¿›åº¦æ¡</cite>
+        <em>progress</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/panel.html" tppabs="http://www.layui.com/doc/element/panel.html">
+        <cite>é¢æ¿</cite>
+        <em>æŠ˜å  / æ‰‹é£ç´</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/table.html" tppabs="http://www.layui.com/doc/element/table.html">
+        <cite>è¡¨æ ¼</cite>
+        <em>é™æ€table</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/badge.html" tppabs="http://www.layui.com/doc/element/badge.html">
+        <cite>å¾½ç« </cite>
+        <em>å°åœ†ç‚¹ / å°è¾¹æ¡†</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/timeline.html" tppabs="http://www.layui.com/doc/element/timeline.html">
+        <cite>æ—¶é—´çº¿</cite>
+        <em>timeline</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/auxiliar.html" tppabs="http://www.layui.com/doc/element/auxiliar.html">
+        <cite>è¾…åŠ©</cite>
+        <em>å¼•ç”¨ / å­—æ®µé›† / æ¨ªçº¿ç­‰</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>å†…ç½®æ¨¡å—</h2></li>
+    
+    <li class="">
+      <a href="layer.html" tppabs="http://www.layui.com/doc/modules/layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>å¼¹å‡ºå±‚</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laydate.html" tppabs="http://www.layui.com/doc/modules/laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>æ—¥æœŸä¸æ—¶é—´é€‰æ‹©</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="layim.html" tppabs="http://www.layui.com/doc/modules/layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>å³æ—¶é€šè®¯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laypage.html" tppabs="http://www.layui.com/doc/modules/laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>åˆ†é¡µ</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laytpl.html" tppabs="http://www.layui.com/doc/modules/laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>æ¨¡æ¿å¼•æ“</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="table.html" tppabs="http://www.layui.com/doc/modules/table.html">
+        <i class="layui-icon">&#xe62d;</i>
+        <cite>æ•°æ®è¡¨æ ¼</cite>
+        <em>table</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="form.html" tppabs="http://www.layui.com/doc/modules/form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>è¡¨å•</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="upload.html" tppabs="http://www.layui.com/doc/modules/upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>æ–‡ä»¶ä¸Šä¼ </cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="element.html" tppabs="http://www.layui.com/doc/modules/element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>å¸¸ç”¨å…ƒç´ æ“ä½œ</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="rate.html" tppabs="http://www.layui.com/doc/modules/rate.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe67b;</i>
+        <cite>è¯„åˆ†</cite>
+        
+          <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+        <em>rate</em>
+      </a>
+    </li>
+    <li class="layui-this">
+      <a href="carousel.html" tppabs="http://www.layui.com/doc/modules/carousel.html">
+        <i class="layui-icon">&#xe634;</i>
+        <cite>è½®æ’­</cite>
+        <em>carousel</em>
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="flow.html" tppabs="http://www.layui.com/doc/modules/flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>æµåŠ è½½</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="util.html" tppabs="http://www.layui.com/doc/modules/util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>å·¥å…·é›†</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="code.html" tppabs="http://www.layui.com/doc/modules/code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>ä»£ç ä¿®é¥°å™¨</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1"><i class="layui-icon">&#xe634;</i>é€šç”¨è½®æ’­ç»„ä»¶æ–‡æ¡£ - layui.carousel</h1>
+    <blockquote class="layui-elem-quote">
+      carousel æ˜¯ layui 2.0 ç‰ˆæœ¬ä¸­æ–°å¢çš„å…¨æ–°æ¨¡å—ï¼Œä¸»è¦é€‚ç”¨äºè·‘é©¬ç¯/è½®æ’­ç­‰äº¤äº’åœºæ™¯ã€‚å®ƒå¹¶éå•çº¯åœ°ä¸ºç„¦ç‚¹å›¾è€Œç”Ÿï¼Œå‡†ç¡®åœ°è¯´ï¼Œå®ƒå¯ä»¥æ»¡è¶³ä»»ä½•ç±»å‹å†…å®¹çš„è½®æ’­å¼åˆ‡æ¢æ“ä½œï¼Œæ›´å¯ä»¥èƒœä»» FullPage ï¼ˆå…¨å±ä¸Šä¸‹è½®æ’­ï¼‰çš„éœ€æ±‚ï¼Œç®€æ´è€Œä¸å¤±å¼ºåŠ²ï¼Œçµæ´»è€Œä¼˜é›…ã€‚
+    </blockquote>
+    <blockquote class="layui-elem-quote">
+      <p>æ¨¡å—åŠ è½½åç§°ï¼š<em>carousel</em></p>
+    </blockquote>
+    
+    
+
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="use">å¿«é€Ÿä½¿ç”¨</a></legend>
+    </fieldset>
+    
+   <div class="site-text">
+      <p>å¦‚ä¸‹æ˜¯å‡ ä¸ªå¸¸ç”¨çš„è½®æ’­ç¤ºä¾‹ï¼Œå…¶ä¸­èƒŒæ™¯è‰²æ˜¯ä¸ºäº†åŒºåˆ†æ¡ç›®å•ç‹¬åŠ çš„ï¼Œåœ¨layuiæ¡†æ¶ä¸­å¹¶ä¸ä¼šåŒ…å«ã€‚æ¡ç›®åŒºåŸŸå¯ä»¥æ”¾ä¸Šæ–‡å­—åˆ—è¡¨ã€å›¾ç‰‡ç­‰ä»»æ„å†…å®¹</p>
+    </div>
+    <style>
+      /* ä¸ºäº†åŒºåˆ†æ•ˆæœ */
+      div[carousel-item]>*{text-align: center; line-height: 280px; color: #fff;}
+      div[carousel-item]>*:nth-child(2n){background-color: #5FB878;}
+      div[carousel-item]>*:nth-child(2n+1){background-color: #009688;}
+      #test2 div[carousel-item]>*{line-height: 120px;}
+    </style>
+    
+    <div class="layui-carousel" id="test1">
+      <div carousel-item>
+        <div>æ¡ç›®1</div>
+        <div>æ¡ç›®2</div>
+        <div>æ¡ç›®3</div>
+        <div>æ¡ç›®4</div>
+        <div>æ¡ç›®5</div>
+      </div>
+    </div>  
+    <div class="site-text">
+      <p></p>
+<pre class="layui-code" lay-title="å¯¹åº”çš„ä»£ç ">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;carouselæ¨¡å—å¿«é€Ÿä½¿ç”¨&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/build/layui.css&quot; media=&quot;all&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;div class=&quot;layui-carousel&quot; id=&quot;test1&quot;&gt;
+  &lt;div carousel-item&gt;
+    &lt;div&gt;æ¡ç›®1&lt;/div&gt;
+    &lt;div&gt;æ¡ç›®2&lt;/div&gt;
+    &lt;div&gt;æ¡ç›®3&lt;/div&gt;
+    &lt;div&gt;æ¡ç›®4&lt;/div&gt;
+    &lt;div&gt;æ¡ç›®5&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- æ¡ç›®ä¸­å¯ä»¥æ˜¯ä»»æ„å†…å®¹ï¼Œå¦‚ï¼š&lt;img src=""&gt; --&gt;
+ 
+&lt;script src=&quot;/static/build/layui.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+layui.use(&#x27;carousel&#x27;, function(){
+  var carousel = layui.carousel;
+  //å»ºé€ å®ä¾‹
+  carousel.render({
+    elem: '#test1'
+    ,width: '100%' //è®¾ç½®å®¹å™¨å®½åº¦
+    ,arrow: 'always' //å§‹ç»ˆæ˜¾ç¤ºç®­å¤´
+    //,anim: 'updown' //åˆ‡æ¢åŠ¨ç”»æ–¹å¼
+  });
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>
+        åœ¨HTMLç»“æ„ä¸­ï¼Œåªéœ€è¦ç®€å•åœ°æ³¨æ„è¿™ä¸¤é¡¹ï¼š
+        <br>1) å¤–å±‚å…ƒç´ çš„ <em>class="layui-carousel"</em> ç”¨æ¥æ ‡è¯†ä¸ºä¸€ä¸ªè½®æ’­å®¹å™¨
+        <br>2) å†…å±‚å…ƒç´ çš„å±æ€§ <em>carousel-item</em> ç”¨æ¥æ ‡è¯†æ¡ç›®
+      </p>
+      <p>è€Œ <em>id</em> åˆ™ç”¨äºcarouselæ¨¡å—å»ºé€ å®ä¾‹çš„å…ƒç´ æŒ‡å‘ï¼Œå‰©ä¸‹çš„å·¥ä½œï¼Œå°±æ˜¯æŒ‰ç…§ä½ çš„å®é™…éœ€æ±‚ï¼Œç»™æ–¹æ³•è®¾ç½®ä¸åŒçš„åŸºç¡€å‚æ•°äº†ã€‚</p>
+    </div> 
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="options">åŸºç¡€å‚æ•°é€‰é¡¹</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>é€šè¿‡æ ¸å¿ƒæ–¹æ³•ï¼š<em>carousel.render(options)</em> æ¥å¯¹è½®æ’­è®¾ç½®åŸºç¡€å‚æ•°ï¼Œä¹Ÿå¯ä»¥é€šè¿‡æ–¹æ³•ï¼š<em>carousel.set(options)</em> æ¥è®¾å®šå…¨å±€åŸºç¡€å‚æ•°.</p>
+    </div>
+    
+    <table class="layui-table">
+      <colgroup>
+        <col width="120">
+        <col>
+        <col width="120">
+        <col width="200">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>å¯é€‰é¡¹</th>
+          <th>è¯´æ˜</th>
+          <th>ç±»å‹</th>
+          <th>é»˜è®¤å€¼</th>
+        </tr> 
+      </thead>
+      <tbody>
+        <tr>
+          <td>elem</td>
+          <td>æŒ‡å‘å®¹å™¨é€‰æ‹©å™¨ï¼Œå¦‚ï¼šelem: '#id'ã€‚ä¹Ÿå¯ä»¥æ˜¯DOMå¯¹è±¡</td>
+          <td>string/object</td>
+          <td>æ— </td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>è®¾å®šè½®æ’­å®¹å™¨å®½åº¦ï¼Œæ”¯æŒåƒç´ å’Œç™¾åˆ†æ¯”</td>
+          <td>string</td>
+          <td>'600px'</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>è®¾å®šè½®æ’­å®¹å™¨é«˜åº¦ï¼Œæ”¯æŒåƒç´ å’Œç™¾åˆ†æ¯”</td>
+          <td>string</td>
+          <td>'280px'</td>
+        </tr>
+        <tr>
+          <td>full</td>
+          <td>æ˜¯å¦å…¨å±è½®æ’­</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>anim</td>
+          <td class="layui-text">
+            è½®æ’­åˆ‡æ¢åŠ¨ç”»æ–¹å¼ï¼Œå¯é€‰å€¼ä¸ºï¼š
+            <ul>
+              <li>defaultï¼ˆå·¦å³åˆ‡æ¢ï¼‰</li>
+              <li>updownï¼ˆä¸Šä¸‹åˆ‡æ¢ï¼‰</li>
+              <li>fadeï¼ˆæ¸éšæ¸æ˜¾åˆ‡æ¢ï¼‰</li>
+            </ul>
+          </td>
+          <td>string</td>
+          <td>'default'</td>
+        </tr>
+        <tr>
+          <td>autoplay</td>
+          <td>æ˜¯å¦è‡ªåŠ¨åˆ‡æ¢</td>
+          <td>boolean</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>interval</td>
+          <td>è‡ªåŠ¨åˆ‡æ¢çš„æ—¶é—´é—´éš”ï¼Œå•ä½ï¼šmsï¼ˆæ¯«ç§’ï¼‰ï¼Œä¸èƒ½ä½äº800</td>
+          <td>number</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>index</td>
+          <td>åˆå§‹å¼€å§‹çš„æ¡ç›®ç´¢å¼•</td>
+          <td>number</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>arrow</td>
+          <td class="layui-text">
+            åˆ‡æ¢ç®­å¤´é»˜è®¤æ˜¾ç¤ºçŠ¶æ€ï¼Œå¯é€‰å€¼ä¸ºï¼š
+            <ul>
+              <li>hoverï¼ˆæ‚¬åœæ˜¾ç¤ºï¼‰</li>
+              <li>alwaysï¼ˆå§‹ç»ˆæ˜¾ç¤ºï¼‰</li>
+              <li>noneï¼ˆå§‹ç»ˆä¸æ˜¾ç¤ºï¼‰</li>
+            </ul>
+          </td>
+          <td>string</td>
+          <td>'hover'</td>
+        </tr>
+        <tr>
+          <td>indicator</td>
+          <td class="layui-text">
+            æŒ‡ç¤ºå™¨ä½ç½®ï¼Œå¯é€‰å€¼ä¸ºï¼š
+            <ul>
+              <li>insideï¼ˆå®¹å™¨å†…éƒ¨ï¼‰</li>
+              <li>outsideï¼ˆå®¹å™¨å¤–éƒ¨ï¼‰</li>
+              <li>noneï¼ˆä¸æ˜¾ç¤ºï¼‰</li>
+            </ul>
+            <br>æ³¨æ„ï¼šå¦‚æœè®¾å®šäº† <em>anim:'updown'</em>ï¼Œè¯¥å‚æ•°å°†æ— æ•ˆ
+          </td>
+          <td>string</td>
+          <td>'inside'</td>
+        </tr>
+        <tr>
+          <td>trigger</td>
+          <td class="layui-text">
+            æŒ‡ç¤ºå™¨çš„è§¦å‘äº‹ä»¶
+          </td>
+          <td>string</td>
+          <td>'click'</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="onchange">åˆ‡æ¢äº‹ä»¶</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>è½®æ’­çš„æ¯ä¸€æ¬¡åˆ‡æ¢æ—¶è§¦å‘ï¼Œå›è°ƒå‡½æ•°è¿”å›ä¸€ä¸ªobjectå‚æ•°ï¼Œæºå¸¦çš„æˆå‘˜å¦‚ä¸‹ï¼š</p>
+      <pre class="layui-code">
+var carousel = layui.carousel;
+ 
+//ç›‘å¬è½®æ’­åˆ‡æ¢äº‹ä»¶
+carousel.on('change(test1)', function(obj){ //test1æ¥æºäºå¯¹åº”HTMLå®¹å™¨çš„ <em>lay-filter="test1"</em> å±æ€§å€¼
+  console.log(obj.index); //å½“å‰æ¡ç›®çš„ç´¢å¼•
+  console.log(obj.prevIndex); //ä¸Šä¸€ä¸ªæ¡ç›®çš„ç´¢å¼•
+  console.log(obj.item); //å½“å‰æ¡ç›®çš„å…ƒç´ å¯¹è±¡
+});     
+      </pre>
+    </div>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="reload">é‡ç½®è½®æ’­</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>äº‹å®ä¸Šï¼Œåœ¨æ‰§è¡Œ <em>carousel.render(options)</em> æ–¹æ³•æ—¶ï¼Œæœ‰è¿”å›ä¸€ä¸ªå½“å‰å®ä¾‹çš„å¯¹è±¡ã€‚è¯¥å¯¹è±¡åŒ…å«äº†ç”¨äºæ“ä½œå½“å‰è½®æ’­çš„ä¸€äº›å±æ€§å’Œæ–¹æ³•ã€‚</p>
+      <pre class="layui-code">
+var ins = carousel.render(options);
+ 
+//é‡ç½®è½®æ’­
+ins.reload(options);
+      </pre>
+    </div>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="docend">ç»“è¯­</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>ç”±äºè½®æ’­çš„ä½¿ç”¨éå¸¸ç®€å•ï¼Œæ‰€ä»¥æœ¬ç¯‡ä¸åšè¿‡äºè¯¦ç»†çš„è®²è§£ï¼Œæ ¸å¿ƒåœ¨äºåŸºç¡€å‚æ•°é€‰é¡¹çš„è®¾ç½®ã€‚ä½ ä¹Ÿå¯ä»¥å‰å¾€ç¤ºä¾‹é¡µé¢è¿›è¡Œæ›´ä¸ºç›´è§‚çš„äº†è§£ã€‚</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>layui - ç”¨å¿ƒä¸ä½ æ²Ÿé€š</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>&copy; 2018 <a href="javascript:if(confirm('http://www.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">layui.com</a> MIT license</p>
+    <p>
+      <a href="javascript:if(confirm('http://fly.layui.com/case/2018/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/case/2018/'" tppabs="http://fly.layui.com/case/2018/" target="_blank">æ¡ˆä¾‹</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/3147/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/3147/'" tppabs="http://fly.layui.com/jie/3147/" target="_blank">æ”¯æŒ</a>
+      <a href="javascript:;" site-event="contactInfo">è”ç³»</a>
+      <a href="javascript:if(confirm('https://github.com/sentsin/layui/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://github.com/sentsin/layui/'" tppabs="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+      <a href="javascript:if(confirm('https://gitee.com/sentsin/layui  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://gitee.com/sentsin/layui'" tppabs="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">ç äº‘</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/2461/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/2461/'" tppabs="http://fly.layui.com/jie/2461/" target="_blank">å¾®ä¿¡å…¬ä¼—å·</a>
+    </p>
+    <p class="site-union">
+      <a href="javascript:if(confirm('https://www.upyun.com/?from=layui  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://www.upyun.com/?from=layui'" tppabs="https://www.upyun.com/?from=layui" target="_blank" rel="nofollow" upyun><img src="../../../res.layui.com/static/images/other/upyun.png-t=1" tppabs="http://res.layui.com/static/images/other/upyun.png?t=1"></a>
+      <span>æä¾› CDN èµåŠ©</span>
+    </p>
+  </div>
+</div>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../res.layui.com/layui/dist/layui.js-t=1531663423583" tppabs="http://res.layui.com/layui/dist/layui.js?t=1531663423583" charset="utf-8"></script>
+<script>
+window.global = {
+  pageType: 'doc'
+  ,preview: function(){
+    var preview = document.getElementById('LAY_preview');
+    return preview ? preview.innerHTML : '';
+  }()
+};
+layui.config({
+  base: '//res.layui.com/static/lay/modules/layui/'
+  ,version: '1531663423583'
+}).use('global');
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30088308'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30088308' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //å»ºé€ å®ä¾‹
+  carousel.render({
+    elem: '#test1'
+    ,width: '100%'
+    ,arrow: 'always'
+  });
+  
+});
+</script>
+</body>
+</html>

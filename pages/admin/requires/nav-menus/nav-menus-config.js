@@ -1,0 +1,10 @@
+require.config({
+  baseUrl:'/admin',
+  paths:{
+    //先引用第三方的
+    jquery:'../assets/vendors/jquery/jquery',
+    template:'../assets/vendors/art-template/template-web',
+    //后面引用自己的
+    index:'requires/nav-menus/nav-menus'
+  }
+})

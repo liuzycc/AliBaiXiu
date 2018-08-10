@@ -1,0 +1,589 @@
+<html> 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>评分组件文档 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../res.layui.com/layui/dist/css/layui.css-t=1531663423583" tppabs="http://res.layui.com/layui/dist/css/layui.css?t=1531663423583"  media="all">
+  <link rel="stylesheet" href="../../../res.layui.com/static/css/global.css-t=1531663423583-6" tppabs="http://res.layui.com/static/css/global.css?t=1531663423583-6" media="all">
+</head>
+<body>
+<div class="layui-header header header-doc" summer>
+  <div class="layui-main">
+    <a class="logo" href="javascript:if(confirm('http://www.layui.com/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">
+      <img src="../../../res.layui.com/static/images/layui/logo.png" tppabs="http://res.layui.com/static/images/layui/logo.png" alt="layui">
+    </a>
+    <div class="layui-form component">
+      <select lay-search lay-filter="component">
+        <option value="">搜索组件或模块</option>
+        <option value="element/layout.html">grid 栅格布局</option>
+        <option value="element/layout.html#admin">admin 后台布局</option>
+        <option value="element/color.html">color 颜色</option>
+        <option value="element/icon.html">iconfont 字体图标</option>
+        <option value="element/anim.html">animation 动画</option>
+        <option value="element/button.html">button 按钮</option>
+        <option value="element/form.html">form 表单组</option>
+        <option value="element/form.html#input">input 输入框</option>
+        <option value="element/form.html#select">select 下拉选择框</option>
+        <option value="element/form.html#checkbox">checkbox 复选框</option>
+        <option value="element/form.html#switch">switch 开关</option>
+        <option value="element/form.html#radio">radio 单选框</option>
+        <option value="element/form.html#textarea">textarea 文本域</option>
+        <option value="element/nav.html">nav 导航菜单</option>
+        <option value="element/nav.html#breadcrumb">breadcrumb 面包屑</option>
+        <option value="element/tab.html">tabs 选项卡</option>
+        <option value="element/progress.html">progress 进度条</option>
+        <option value="element/collapse.html">collapse 折叠面板/手风琴</option>
+        <option value="element/table.html">table 表格元素</option>
+        <option value="element/badge.html">badge 徽章</option>
+        <option value="element/timeline.html">timeline 时间线</option>
+        <option value="element/auxiliar.html#blockquote">blockquote 引用块</option>
+        <option value="element/auxiliar.html#fieldset">fieldset 字段集</option>
+        <option value="element/auxiliar.html#hr">hr 分割线</option>
+        
+        <option value="modules/layer.html">layer 弹出层/弹窗综合</option>
+        <option value="modules/laydate.html">laydate 日期时间选择器</option>
+        <option value="modules/layim.html">layim 即时通讯/聊天</option>
+        <option value="modules/laypage.html">laypage 分页</option>
+        <option value="modules/laytpl.html">laytpl 模板引擎</option>
+        <option value="modules/form.html">form 表单模块</option>
+        <option value="modules/table.html">table 数据表格</option>
+        <option value="modules/upload.html">upload 文件/图片上传</option>
+        <option value="modules/element.html">element 常用元素操作</option>
+        <option value="modules/rate.html">rate 评分</option>
+        <option value="modules/carousel.html">carousel 轮播/跑马灯</option>
+        <option value="modules/layedit.html">layedit 富文本编辑器</option>
+        <option value="modules/tree.html">tree 树形菜单</option>
+        <option value="modules/flow.html">flow 信息流/图片懒加载</option>
+        <option value="modules/util.html">util 工具集</option>
+        <option value="modules/code.html">code 代码修饰</option>
+      </select>
+    </div>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" tppabs="http://www.layui.com/doc/">文档<!--  --></a> 
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:if(confirm('http://www.layui.com/demo/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/demo/'" tppabs="http://www.layui.com/demo/">示例<!-- <span class="layui-badge-dot"></span> --></a>
+      </li> 
+      
+      <li class="layui-nav-item layui-hide-xs">
+        <a href="javascript:if(confirm('http://fly.layui.com/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">社区</a>
+      </li>
+      
+      
+      <li class="layui-nav-item">
+        <!--<span class="layui-badge-dot" style="margin: -4px 3px 0;"></span>-->
+        <a href="javascript:;">周边</a>
+        <dl class="layui-nav-child">
+          <dd class="layui-hide-sm layui-show-xs"><a href="javascript:if(confirm('http://fly.layui.com/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">社区交流</a><hr></dd>
+          <dd><a href="javascript:if(confirm('http://layim.layui.com/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://layim.layui.com/'" tppabs="http://layim.layui.com/" target="_blank">即时聊天</a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/admin/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/" target="_blank">后台模板</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/fly/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/template/fly/'" tppabs="http://www.layui.com/template/fly/" target="_blank">社区模板</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/xianyan/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/template/xianyan/'" tppabs="http://www.layui.com/template/xianyan/" target="_blank">轻博客模板<span class="layui-badge-dot"></span></a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/alone.html  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/alone.html'" tppabs="http://www.layui.com/alone.html" target="_blank">独立组件</a></dd>
+          <dd><a href="javascript:if(confirm('http://fly.layui.com/jie/24209/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/jie/24209/'" tppabs="http://fly.layui.com/jie/24209/" target="_blank">Axure组件</a></dd>
+        </dl>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs" lay-unselect>
+        <a href="javascript:if(confirm('http://www.layui.com/admin/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/">官方后台模板<span class="layui-badge-dot"></span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--> 
+<ul class="site-dir">
+  <li><a href="#use"><cite>使用</cite></a></li>
+  <li><a href="#options"><cite>基础参数</cite></a></li>
+  <li><a href="#score"><cite>分数设置</cite></a></li>
+  <li>回调</li>
+  <ul style="margin-left: 15px;">
+    <li><a href="#onself">自定义文本的回调</a></li>
+    <li><a href="#onclick">点击产生的回调</a></li>
+  </ul>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <div class="layui-form" style="height: 38px; margin: 10px 13px 0 0;">
+    <select lay-filter="tabVersion">
+      <option value="new">2.x</option>
+      <option value="v1">1.0.9</option>
+    </select>
+  </div>
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" tppabs="http://www.layui.com/doc/">
+        <cite>开始使用</cite>
+        <em>Getting Started</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" tppabs="http://www.layui.com/doc/base/infrastructure.html">
+        <cite>底层方法</cite>
+        <em>基础支撑</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" tppabs="http://www.layui.com/doc/base/element.html">
+        <cite>页面元素</cite>
+        <em>规范 / 公共类 / 属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" tppabs="http://www.layui.com/doc/base/modules.html">
+        <cite>模块规范</cite>
+        <em>使用 / 扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html" tppabs="http://www.layui.com/doc/base/faq.html">
+        <cite>常见问题</cite>
+        <em>FAQ</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/changelog.html" tppabs="http://www.layui.com/doc/base/changelog.html">
+        <cite>更新日志</cite>
+        
+        <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/layout.html" tppabs="http://www.layui.com/doc/element/layout.html">
+        <cite>布局</cite>
+        <em>栅格 / 后台布局</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/color.html" tppabs="http://www.layui.com/doc/element/color.html">
+        <cite>颜色</cite>
+        <em>主题色设计感 / 内置背景色</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/icon.html" tppabs="http://www.layui.com/doc/element/icon.html">
+        <cite>图标</cite>
+        
+          <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/anim.html" tppabs="http://www.layui.com/doc/element/anim.html">
+        <cite>动画</cite>
+        <em>内置的CSS3动画类</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/button.html" tppabs="http://www.layui.com/doc/element/button.html">
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/form.html" tppabs="http://www.layui.com/doc/element/form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/nav.html" tppabs="http://www.layui.com/doc/element/nav.html">
+        <cite>导航</cite>
+        <em>菜单 / 面包屑</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/tab.html" tppabs="http://www.layui.com/doc/element/tab.html">
+        <cite>选项卡</cite>
+        <em>Tabs 切换</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/progress.html" tppabs="http://www.layui.com/doc/element/progress.html">
+        <cite>进度条</cite>
+        <em>progress</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/panel.html" tppabs="http://www.layui.com/doc/element/panel.html">
+        <cite>面板</cite>
+        <em>折叠 / 手风琴</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/table.html" tppabs="http://www.layui.com/doc/element/table.html">
+        <cite>表格</cite>
+        <em>静态table</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/badge.html" tppabs="http://www.layui.com/doc/element/badge.html">
+        <cite>徽章</cite>
+        <em>小圆点 / 小边框</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/timeline.html" tppabs="http://www.layui.com/doc/element/timeline.html">
+        <cite>时间线</cite>
+        <em>timeline</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/auxiliar.html" tppabs="http://www.layui.com/doc/element/auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 字段集 / 横线等</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置模块</h2></li>
+    
+    <li class="">
+      <a href="layer.html" tppabs="http://www.layui.com/doc/modules/layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laydate.html" tppabs="http://www.layui.com/doc/modules/laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期与时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="layim.html" tppabs="http://www.layui.com/doc/modules/layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laypage.html" tppabs="http://www.layui.com/doc/modules/laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="laytpl.html" tppabs="http://www.layui.com/doc/modules/laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="table.html" tppabs="http://www.layui.com/doc/modules/table.html">
+        <i class="layui-icon">&#xe62d;</i>
+        <cite>数据表格</cite>
+        <em>table</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="form.html" tppabs="http://www.layui.com/doc/modules/form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="upload.html" tppabs="http://www.layui.com/doc/modules/upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="element.html" tppabs="http://www.layui.com/doc/modules/element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li class="layui-this">
+      <a href="rate.html" tppabs="http://www.layui.com/doc/modules/rate.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe67b;</i>
+        <cite>评分</cite>
+        
+        <em>rate</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="carousel.html" tppabs="http://www.layui.com/doc/modules/carousel.html">
+        <i class="layui-icon">&#xe634;</i>
+        <cite>轮播</cite>
+        <em>carousel</em>
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="flow.html" tppabs="http://www.layui.com/doc/modules/flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="util.html" tppabs="http://www.layui.com/doc/modules/util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具集</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="code.html" tppabs="http://www.layui.com/doc/modules/code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1"><i class="layui-icon">&#xe67b;</i>评分组件文档 - layui.rate</h1>
+    <blockquote class="layui-elem-quote layui-text">
+      rate 评分组件在电商和 O2O 平台尤为常见，一般用于对商家进行服务满意度评价。rate 组件是 layui 团队新成员 <a href="javascript:if(confirm('https://github.com/star1029/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ ��һ��ַʹ����δ֧�ֵ�Э�� (���磬gopher)��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='https://github.com/star1029/'" tppabs="https://github.com/star1029/" target="_blank" rel="nofollow">@star1029</a> 的第一款组件，外形依然小巧自然，功能依旧灵活实用。其中评分对应的自定义内容功能，可让它有更多的发挥空间。该组件为 2.3.0 版本新增
+    </blockquote>
+    <blockquote class="layui-elem-quote">
+      模块加载名称：<em>rate</em>
+    </blockquote>
+    
+    
+
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="use">使用</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>rate 组件可以用来进行展示或评价，你只需要通过更改参数设定来开启你想要的功能，如下是一个最基本的例子：</p>
+      <pre class="layui-code" lay-title="layui.rate小例子">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;meta charset="utf-8">
+  &lt;title>评分组件&lt;/title>
+  &lt;link rel="stylesheet" href="../src/css/layui.css">
+&lt;/head>
+&lt;body>
+  &lt;div id="test1">&lt;/div>
+  &lt;script src="../src/layui.js">&lt;/script>
+  &lt;script>
+  layui.use('rate', function(){
+    var rate = layui.rate;
+   
+    //渲染
+    var ins1 = rate.render({
+      elem: '#test1'  //绑定元素
+    });
+  });
+  &lt;/script>
+&lt;/body>
+&lt;/html>
+      </pre>
+      <p>这真的就是个小例子，所以下文对组件的参数进行了说明，请仔细阅读奥</p>
+    </div> 
+ 
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="options">基础参数</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>目前 rate 组件提供了以下基础参数，你可根据实际场景进行相应的设置</p>
+      <table class="layui-table">
+        <colgroup>
+          <col width="120">
+          <col>
+          <col width="120">
+          <col width="200">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>参数选项</th>
+            <th>说明</th>
+            <th>类型</th>
+            <th>默认值</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>elem</td>
+            <td>指向容器选择器</td>
+            <td>string/object</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>length</td>
+            <td>评分组件中具体星星的个数。个数当然是整数啦，残缺的星星很可怜的，所以设置了小数点的组件我们会默认向下取整</td>
+            <td>number</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>评分的初始值</td>
+            <td>number</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>theme</td>
+            <td>主题颜色。我们默认的组件颜色是<em>#FFB800</em>，你可以根据自身喜好来更改组件的颜色，以适用不同场景</td>
+            <td>string</td>
+            <td>#FFB800</td>
+          </tr>
+          <tr>
+            <td>half</td>
+            <td>设定组件是否可以选择半星</td>
+            <td>boolean</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>text</td>
+            <td>是否显示评分对应的内容</td>
+            <td>boolean</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>readonly</td>
+            <td>是否只读，即只用于展示而不可点</td>
+            <td>boolean</td>
+            <td>false</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>   
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="score">分数设置</a></legend>
+    </fieldset>
+    <div class="site-text layui-text">
+      <p>如若你设置分数，我们会根据你是否开启半星功能，来做一个具体的规范：
+      
+      <h4><strong>关闭半星功能:</strong></h4>
+        <ul>
+          <li><em>小数值大于 0.5 ：分数向上取整，如 3.6 分，则系统自动更改为 4 分 </em></li>
+          <li><em>小数值小于等于 0.5 ：分数向下取整，如 3.2 分，则系统自动更改为 3 分 </em></li>
+          <li><em>如果在关闭半星功能的情况下开启了文本，你会发现你的分数也相应的变成了整数</em></li>
+        </ul>
+      
+      <h4><strong>开启半星功能:</strong></h4>
+        <ul>
+          <li><em>不论你的小数值是 0.1 还是 0.9，都统一规划为 0.5，在文本开启的情况下，你可以看见你的分数并没有发生变化</em></li>
+        </ul>
+      </p>
+    </div>
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="onself">自定义文本的回调</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>通过 setText 函数，在组件初次渲染和点击后时产生回调。我们默认文本以星级显示，你可以根据自己设定的文字来替换我们的默认文本，如 “讨厌” “喜欢” 。若用户选择分数而没有设定对应文字的情况下，系统会使用我们的默认文本</p>
+      <pre class="layui-code" lay-title="例子"> 
+rate.render({
+  elem: '#test1'
+  ,setText: function(value){
+    var arrs = {
+      '1': '极差'
+      ,'2': '差'
+      ,'3': '中等'
+      ,'4': '好'
+    };
+    this.span.text(arrs[value] || ( value + "星"));
+  }
+});
+      </pre>
+      <p>当你点击 3 星时，文本内容是中等，点击 5 星时，由于没有设定对应文字，所以文本会显示 5 星</p>
+    </div>
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="onclick">点击产生的回调</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>通过 choose 实现函数，在组件被点击后触发，回调分数，用户可根据分数来设置效果，比如出现弹出层</p>
+      <pre class="layui-code" lay-title="例子">
+rate.render({
+  elem: '#test1'
+  ,choose: function(value){
+    if(value > 4) alert( '么么哒' )
+  }
+});
+      </pre>
+      <p>那么当你点击 5 星或更高星级时，页面就会弹出“么么哒”啦，你可根据相应需求在 choose 里完善你的代码</p>
+    </div>
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="docend">结语</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>评分组件非常简单，重点在于参数选项的设置，你可以前往示例页面进行更为直观的了解。</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>layui - 用心与你沟通</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>&copy; 2018 <a href="javascript:if(confirm('http://www.layui.com/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">layui.com</a> MIT license</p>
+    <p>
+      <a href="javascript:if(confirm('http://fly.layui.com/case/2018/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/case/2018/'" tppabs="http://fly.layui.com/case/2018/" target="_blank">案例</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/3147/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/jie/3147/'" tppabs="http://fly.layui.com/jie/3147/" target="_blank">支持</a>
+      <a href="javascript:;" site-event="contactInfo">联系</a>
+      <a href="javascript:if(confirm('https://github.com/sentsin/layui/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ ��һ��ַʹ����δ֧�ֵ�Э�� (���磬gopher)��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='https://github.com/sentsin/layui/'" tppabs="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+      <a href="javascript:if(confirm('https://gitee.com/sentsin/layui  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ ��һ��ַʹ����δ֧�ֵ�Э�� (���磬gopher)��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='https://gitee.com/sentsin/layui'" tppabs="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">码云</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/2461/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://fly.layui.com/jie/2461/'" tppabs="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+    </p>
+    <p class="site-union">
+      <a href="javascript:if(confirm('https://www.upyun.com/?from=layui  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ ��һ��ַʹ����δ֧�ֵ�Э�� (���磬gopher)��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='https://www.upyun.com/?from=layui'" tppabs="https://www.upyun.com/?from=layui" target="_blank" rel="nofollow" upyun><img src="../../../res.layui.com/static/images/other/upyun.png-t=1" tppabs="http://res.layui.com/static/images/other/upyun.png?t=1"></a>
+      <span>提供 CDN 赞助</span>
+    </p>
+  </div>
+</div>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../res.layui.com/layui/dist/layui.js-t=1531663423583" tppabs="http://res.layui.com/layui/dist/layui.js?t=1531663423583" charset="utf-8"></script>
+<script>
+window.global = {
+  pageType: 'doc'
+  ,preview: function(){
+    var preview = document.getElementById('LAY_preview');
+    return preview ? preview.innerHTML : '';
+  }()
+};
+layui.config({
+  base: '//res.layui.com/static/lay/modules/layui/'
+  ,version: '1531663423583'
+}).use('global');
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30088308'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30088308' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

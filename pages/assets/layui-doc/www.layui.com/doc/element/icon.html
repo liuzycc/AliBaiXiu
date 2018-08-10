@@ -1,0 +1,1316 @@
+<html> 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>å­—ä½“å›¾æ ‡ - é¡µé¢å…ƒç´  - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../res.layui.com/layui/dist/css/layui.css-t=1531663423583" tppabs="http://res.layui.com/layui/dist/css/layui.css?t=1531663423583"  media="all">
+  <link rel="stylesheet" href="../../../res.layui.com/static/css/global.css-t=1531663423583-6" tppabs="http://res.layui.com/static/css/global.css?t=1531663423583-6" media="all">
+</head>
+<body>
+<div class="layui-header header header-doc" summer>
+  <div class="layui-main">
+    <a class="logo" href="javascript:if(confirm('http://www.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">
+      <img src="../../../res.layui.com/static/images/layui/logo.png" tppabs="http://res.layui.com/static/images/layui/logo.png" alt="layui">
+    </a>
+    <div class="layui-form component">
+      <select lay-search lay-filter="component">
+        <option value="">æœç´¢ç»„ä»¶æˆ–æ¨¡å—</option>
+        <option value="element/layout.html">grid æ …æ ¼å¸ƒå±€</option>
+        <option value="element/layout.html#admin">admin åå°å¸ƒå±€</option>
+        <option value="element/color.html">color é¢œè‰²</option>
+        <option value="element/icon.html">iconfont å­—ä½“å›¾æ ‡</option>
+        <option value="element/anim.html">animation åŠ¨ç”»</option>
+        <option value="element/button.html">button æŒ‰é’®</option>
+        <option value="element/form.html">form è¡¨å•ç»„</option>
+        <option value="element/form.html#input">input è¾“å…¥æ¡†</option>
+        <option value="element/form.html#select">select ä¸‹æ‹‰é€‰æ‹©æ¡†</option>
+        <option value="element/form.html#checkbox">checkbox å¤é€‰æ¡†</option>
+        <option value="element/form.html#switch">switch å¼€å…³</option>
+        <option value="element/form.html#radio">radio å•é€‰æ¡†</option>
+        <option value="element/form.html#textarea">textarea æ–‡æœ¬åŸŸ</option>
+        <option value="element/nav.html">nav å¯¼èˆªèœå•</option>
+        <option value="element/nav.html#breadcrumb">breadcrumb é¢åŒ…å±‘</option>
+        <option value="element/tab.html">tabs é€‰é¡¹å¡</option>
+        <option value="element/progress.html">progress è¿›åº¦æ¡</option>
+        <option value="element/collapse.html">collapse æŠ˜å é¢æ¿/æ‰‹é£ç´</option>
+        <option value="element/table.html">table è¡¨æ ¼å…ƒç´ </option>
+        <option value="element/badge.html">badge å¾½ç« </option>
+        <option value="element/timeline.html">timeline æ—¶é—´çº¿</option>
+        <option value="element/auxiliar.html#blockquote">blockquote å¼•ç”¨å—</option>
+        <option value="element/auxiliar.html#fieldset">fieldset å­—æ®µé›†</option>
+        <option value="element/auxiliar.html#hr">hr åˆ†å‰²çº¿</option>
+        
+        <option value="modules/layer.html">layer å¼¹å‡ºå±‚/å¼¹çª—ç»¼åˆ</option>
+        <option value="modules/laydate.html">laydate æ—¥æœŸæ—¶é—´é€‰æ‹©å™¨</option>
+        <option value="modules/layim.html">layim å³æ—¶é€šè®¯/èŠå¤©</option>
+        <option value="modules/laypage.html">laypage åˆ†é¡µ</option>
+        <option value="modules/laytpl.html">laytpl æ¨¡æ¿å¼•æ“</option>
+        <option value="modules/form.html">form è¡¨å•æ¨¡å—</option>
+        <option value="modules/table.html">table æ•°æ®è¡¨æ ¼</option>
+        <option value="modules/upload.html">upload æ–‡ä»¶/å›¾ç‰‡ä¸Šä¼ </option>
+        <option value="modules/element.html">element å¸¸ç”¨å…ƒç´ æ“ä½œ</option>
+        <option value="modules/rate.html">rate è¯„åˆ†</option>
+        <option value="modules/carousel.html">carousel è½®æ’­/è·‘é©¬ç¯</option>
+        <option value="modules/layedit.html">layedit å¯Œæ–‡æœ¬ç¼–è¾‘å™¨</option>
+        <option value="modules/tree.html">tree æ ‘å½¢èœå•</option>
+        <option value="modules/flow.html">flow ä¿¡æ¯æµ/å›¾ç‰‡æ‡’åŠ è½½</option>
+        <option value="modules/util.html">util å·¥å…·é›†</option>
+        <option value="modules/code.html">code ä»£ç ä¿®é¥°</option>
+      </select>
+    </div>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" tppabs="http://www.layui.com/doc/">æ–‡æ¡£<!--  --></a> 
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:if(confirm('http://www.layui.com/demo/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/demo/'" tppabs="http://www.layui.com/demo/">ç¤ºä¾‹<!-- <span class="layui-badge-dot"></span> --></a>
+      </li> 
+      
+      <li class="layui-nav-item layui-hide-xs">
+        <a href="javascript:if(confirm('http://fly.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">ç¤¾åŒº</a>
+      </li>
+      
+      
+      <li class="layui-nav-item">
+        <!--<span class="layui-badge-dot" style="margin: -4px 3px 0;"></span>-->
+        <a href="javascript:;">å‘¨è¾¹</a>
+        <dl class="layui-nav-child">
+          <dd class="layui-hide-sm layui-show-xs"><a href="javascript:if(confirm('http://fly.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/'" tppabs="http://fly.layui.com/" target="_blank">ç¤¾åŒºäº¤æµ</a><hr></dd>
+          <dd><a href="javascript:if(confirm('http://layim.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://layim.layui.com/'" tppabs="http://layim.layui.com/" target="_blank">å³æ—¶èŠå¤©</a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/admin/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/" target="_blank">åå°æ¨¡æ¿</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/fly/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/template/fly/'" tppabs="http://www.layui.com/template/fly/" target="_blank">ç¤¾åŒºæ¨¡æ¿</a></dd>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/template/xianyan/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/template/xianyan/'" tppabs="http://www.layui.com/template/xianyan/" target="_blank">è½»åšå®¢æ¨¡æ¿<span class="layui-badge-dot"></span></a></dd>
+          
+          <hr>
+          <dd><a href="javascript:if(confirm('http://www.layui.com/alone.html  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/alone.html'" tppabs="http://www.layui.com/alone.html" target="_blank">ç‹¬ç«‹ç»„ä»¶</a></dd>
+          <dd><a href="javascript:if(confirm('http://fly.layui.com/jie/24209/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/24209/'" tppabs="http://fly.layui.com/jie/24209/" target="_blank">Axureç»„ä»¶</a></dd>
+        </dl>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs" lay-unselect>
+        <a href="javascript:if(confirm('http://www.layui.com/admin/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/admin/'" tppabs="http://www.layui.com/admin/">å®˜æ–¹åå°æ¨¡æ¿<span class="layui-badge-dot"></span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- è®©IE8/9æ”¯æŒåª’ä½“æŸ¥è¯¢ï¼Œä»è€Œå…¼å®¹æ …æ ¼ -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--> 
+<ul class="site-dir">
+  <li><a href="#use"><cite>ä½¿ç”¨æ–¹å¼</cite></a></li>
+  <li><a href="#table"><cite>å†…ç½®å›¾æ ‡ä¸€è§ˆè¡¨</cite> <span class="layui-badge-dot"></span></a></li>
+  <li><a href="#access"><cite>è·¨åŸŸé—®é¢˜çš„è§£å†³</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <div class="layui-form" style="height: 38px; margin: 10px 13px 0 0;">
+    <select lay-filter="tabVersion">
+      <option value="new">2.x</option>
+      <option value="v1">1.0.9</option>
+    </select>
+  </div>
+  <ul class="layui-tree">
+  
+    <li><h2>åŸºç¡€è¯´æ˜</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" tppabs="http://www.layui.com/doc/">
+        <cite>å¼€å§‹ä½¿ç”¨</cite>
+        <em>Getting Started</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" tppabs="http://www.layui.com/doc/base/infrastructure.html">
+        <cite>åº•å±‚æ–¹æ³•</cite>
+        <em>åŸºç¡€æ”¯æ’‘</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" tppabs="http://www.layui.com/doc/base/element.html">
+        <cite>é¡µé¢å…ƒç´ </cite>
+        <em>è§„èŒƒ / å…¬å…±ç±» / å±æ€§</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" tppabs="http://www.layui.com/doc/base/modules.html">
+        <cite>æ¨¡å—è§„èŒƒ</cite>
+        <em>ä½¿ç”¨ / æ‰©å±•</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html" tppabs="http://www.layui.com/doc/base/faq.html">
+        <cite>å¸¸è§é—®é¢˜</cite>
+        <em>FAQ</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/changelog.html" tppabs="http://www.layui.com/doc/base/changelog.html">
+        <cite>æ›´æ–°æ—¥å¿—</cite>
+        
+        <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+      </a>
+    </li>
+    
+    <li><h2>é¡µé¢å…ƒç´ </h2></li>
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="layout.html" tppabs="http://www.layui.com/doc/element/layout.html">
+        <cite>å¸ƒå±€</cite>
+        <em>æ …æ ¼ / åå°å¸ƒå±€</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="color.html" tppabs="http://www.layui.com/doc/element/color.html">
+        <cite>é¢œè‰²</cite>
+        <em>ä¸»é¢˜è‰²è®¾è®¡æ„Ÿ / å†…ç½®èƒŒæ™¯è‰²</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon layui-this">
+      <a href="icon.html" tppabs="http://www.layui.com/doc/element/icon.html">
+        <cite>å›¾æ ‡</cite>
+        
+        <em>å­—ä½“å›¾æ ‡</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="anim.html" tppabs="http://www.layui.com/doc/element/anim.html">
+        <cite>åŠ¨ç”»</cite>
+        <em>å†…ç½®çš„CSS3åŠ¨ç”»ç±»</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="button.html" tppabs="http://www.layui.com/doc/element/button.html">
+        <cite>æŒ‰é’®</cite>
+        <em>buttonç»„</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="form.html" tppabs="http://www.layui.com/doc/element/form.html">
+        <cite>è¡¨å•</cite>
+        <em>formå…ƒç´ é›†åˆ</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="nav.html" tppabs="http://www.layui.com/doc/element/nav.html">
+        <cite>å¯¼èˆª</cite>
+        <em>èœå• / é¢åŒ…å±‘</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="tab.html" tppabs="http://www.layui.com/doc/element/tab.html">
+        <cite>é€‰é¡¹å¡</cite>
+        <em>Tabs åˆ‡æ¢</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="progress.html" tppabs="http://www.layui.com/doc/element/progress.html">
+        <cite>è¿›åº¦æ¡</cite>
+        <em>progress</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="panel.html" tppabs="http://www.layui.com/doc/element/panel.html">
+        <cite>é¢æ¿</cite>
+        <em>æŠ˜å  / æ‰‹é£ç´</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="table.html" tppabs="http://www.layui.com/doc/element/table.html">
+        <cite>è¡¨æ ¼</cite>
+        <em>é™æ€table</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="badge.html" tppabs="http://www.layui.com/doc/element/badge.html">
+        <cite>å¾½ç« </cite>
+        <em>å°åœ†ç‚¹ / å°è¾¹æ¡†</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="timeline.html" tppabs="http://www.layui.com/doc/element/timeline.html">
+        <cite>æ—¶é—´çº¿</cite>
+        <em>timeline</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="auxiliar.html" tppabs="http://www.layui.com/doc/element/auxiliar.html">
+        <cite>è¾…åŠ©</cite>
+        <em>å¼•ç”¨ / å­—æ®µé›† / æ¨ªçº¿ç­‰</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>å†…ç½®æ¨¡å—</h2></li>
+    
+    <li class="">
+      <a href="../modules/layer.html" tppabs="http://www.layui.com/doc/modules/layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>å¼¹å‡ºå±‚</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/laydate.html" tppabs="http://www.layui.com/doc/modules/laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>æ—¥æœŸä¸æ—¶é—´é€‰æ‹©</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/layim.html" tppabs="http://www.layui.com/doc/modules/layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>å³æ—¶é€šè®¯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/laypage.html" tppabs="http://www.layui.com/doc/modules/laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>åˆ†é¡µ</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/laytpl.html" tppabs="http://www.layui.com/doc/modules/laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>æ¨¡æ¿å¼•æ“</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/table.html" tppabs="http://www.layui.com/doc/modules/table.html">
+        <i class="layui-icon">&#xe62d;</i>
+        <cite>æ•°æ®è¡¨æ ¼</cite>
+        <em>table</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/form.html" tppabs="http://www.layui.com/doc/modules/form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>è¡¨å•</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/upload.html" tppabs="http://www.layui.com/doc/modules/upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>æ–‡ä»¶ä¸Šä¼ </cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/element.html" tppabs="http://www.layui.com/doc/modules/element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>å¸¸ç”¨å…ƒç´ æ“ä½œ</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/rate.html" tppabs="http://www.layui.com/doc/modules/rate.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe67b;</i>
+        <cite>è¯„åˆ†</cite>
+        
+          <span class="layui-badge-dot" style="position: relative; top: -3px; left: -3px;"></span>
+        
+        <em>rate</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/carousel.html" tppabs="http://www.layui.com/doc/modules/carousel.html">
+        <i class="layui-icon">&#xe634;</i>
+        <cite>è½®æ’­</cite>
+        <em>carousel</em>
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="../modules/flow.html" tppabs="http://www.layui.com/doc/modules/flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>æµåŠ è½½</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/util.html" tppabs="http://www.layui.com/doc/modules/util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>å·¥å…·é›†</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li class="">
+      <a href="../modules/code.html" tppabs="http://www.layui.com/doc/modules/code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>ä»£ç ä¿®é¥°å™¨</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1">å­—ä½“å›¾æ ‡</h1>
+    <div class="site-tips site-text">
+      <p>layui çš„æ‰€æœ‰å›¾æ ‡å…¨éƒ¨é‡‡ç”¨å­—ä½“å½¢å¼ï¼Œå–æäºé˜¿é‡Œå·´å·´çŸ¢é‡å›¾æ ‡åº“ï¼ˆiconfontï¼‰ã€‚å› æ­¤ä½ å¯ä»¥æŠŠä¸€ä¸ª icon çœ‹ä½œæ˜¯ä¸€ä¸ªæ™®é€šçš„æ–‡å­—ï¼Œè¿™æ„å‘³ç€ä½ ç›´æ¥ç”¨ css æ§åˆ¶æ–‡å­—å±æ€§ï¼Œå¦‚ colorã€font-sizeï¼Œå°±å¯ä»¥æ”¹å˜å›¾æ ‡çš„é¢œè‰²å’Œå¤§å°ã€‚ä½ å¯ä»¥é€šè¿‡ <em>font-class</em> æˆ– <em>unicode</em> æ¥å®šä¹‰ä¸åŒçš„å›¾æ ‡ã€‚</p>
+    </div>
+    
+    
+
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+
+    
+    <div class="site-title">
+      <fieldset><legend><a name="use">ä½¿ç”¨æ–¹å¼</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>é€šè¿‡å¯¹ä¸€ä¸ªå†…è”å…ƒç´ ï¼ˆä¸€èˆ¬æ¨èç”¨ <em>i</em>æ ‡ç­¾ï¼‰è®¾å®š <em>class="layui-icon"</em>ï¼Œæ¥å®šä¹‰ä¸€ä¸ªå›¾æ ‡ï¼Œç„¶åå¯¹å…ƒç´ åŠ ä¸Šå›¾æ ‡å¯¹åº”çš„ <em>font-class</em>ï¼ˆæ³¨æ„ï¼šlayui 2.3.0 ä¹‹å‰åªæ”¯æŒé‡‡ç”¨ <em>unicode å­—ç¬¦</em>)ï¼Œå³å¯æ˜¾ç¤ºå‡ºä½ æƒ³è¦çš„å›¾æ ‡ï¼Œè­¬å¦‚ï¼š</p>
+      <pre class="layui-code">
+ä» layui 2.3.0 å¼€å§‹ï¼Œæ”¯æŒ font-class çš„å½¢å¼å®šä¹‰å›¾æ ‡ï¼š
+&lt;i class="layui-icon layui-icon-face-smile">&lt;/i>   
+      <pre class="layui-code">
+æ³¨æ„ï¼šåœ¨ layui 2.3.0 ä¹‹å‰çš„ç‰ˆæœ¬ï¼Œåªèƒ½è®¾ç½® unicode æ¥å®šä¹‰å›¾æ ‡
+&lt;i class="layui-icon">&amp;#xe60c;&lt;/i>   
+å…¶ä¸­çš„ &amp;#xe60c; å³æ˜¯å›¾æ ‡å¯¹åº”çš„ unicode å­—ç¬¦
+       </pre>
+ 
+ä½ å¯ä»¥å»å®šä¹‰å®ƒçš„é¢œè‰²æˆ–è€…å¤§å°ï¼Œå¦‚ï¼š<i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: #FF5722;"></i>  
+&lt;i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: #1E9FFF;">&lt;/i>  
+      </pre>
+    </div>
+    
+    
+    <div class="site-title">
+      <fieldset><legend><a name="table">å†…ç½®å›¾æ ‡ä¸€è§ˆè¡¨ï¼ˆ140ä¸ªï¼‰</a></legend></fieldset>
+    </div>
+    <ul class="site-doc-icon">
+      <li>
+        <i class="layui-icon layui-icon-rate-half"></i>
+        <div class="doc-icon-name">åŠæ˜Ÿ</div>
+        <div class="doc-icon-code">&amp;#xe6c9;</div>
+        <div class="doc-icon-fontclass">layui-icon-rate-half</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-rate"></i>
+        <div class="doc-icon-name">æ˜Ÿæ˜Ÿ-ç©ºå¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe67b;</div>
+        <div class="doc-icon-fontclass">layui-icon-rate</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-rate-solid"></i>
+        <div class="doc-icon-name">æ˜Ÿæ˜Ÿ-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe67a;</div>
+        <div class="doc-icon-fontclass">layui-icon-rate-solid</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-cellphone"></i>
+        <div class="doc-icon-name">æ‰‹æœº</div>
+        <div class="doc-icon-code">&amp;#xe678;</div>
+        <div class="doc-icon-fontclass">layui-icon-cellphone</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-vercode"></i>
+        <div class="doc-icon-name">éªŒè¯ç </div>
+        <div class="doc-icon-code">&amp;#xe679;</div>
+        <div class="doc-icon-fontclass">layui-icon-vercode</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-login-wechat"></i>
+        <div class="doc-icon-name">å¾®ä¿¡</div>
+        <div class="doc-icon-code">&amp;#xe677;</div>
+        <div class="doc-icon-fontclass">layui-icon-login-wechat</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-login-qq"></i>
+        <div class="doc-icon-name">QQ</div>
+        <div class="doc-icon-code">&amp;#xe676;</div>
+        <div class="doc-icon-fontclass">layui-icon-login-qq</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-login-weibo"></i>
+        <div class="doc-icon-name">å¾®åš</div>
+        <div class="doc-icon-code">&amp;#xe675;</div>
+        <div class="doc-icon-fontclass">layui-icon-login-weibo</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-password"></i>
+        <div class="doc-icon-name">å¯†ç </div>
+        <div class="doc-icon-code">&amp;#xe673;</div>
+        <div class="doc-icon-fontclass">layui-icon-password</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-username"></i>
+        <div class="doc-icon-name">ç”¨æˆ·å</div>
+        <div class="doc-icon-code">&amp;#xe66f;</div>
+        <div class="doc-icon-fontclass">layui-icon-username</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-refresh-3"></i>
+        <div class="doc-icon-name">åˆ·æ–°-ç²—</div>
+        <div class="doc-icon-code">&amp;#xe9aa;</div>
+        <div class="doc-icon-fontclass">layui-icon-refresh-3</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-auz"></i>
+        <div class="doc-icon-name">æˆæƒ</div>
+        <div class="doc-icon-code">&amp;#xe672;</div>
+        <div class="doc-icon-fontclass">layui-icon-auz</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-spread-left"></i>
+        <div class="doc-icon-name">å·¦å‘å³ä¼¸ç¼©èœå•</div>
+        <div class="doc-icon-code">&amp;#xe66b;</div>
+        <div class="doc-icon-fontclass">layui-icon-spread-left</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-shrink-right"></i>
+        <div class="doc-icon-name">å³å‘å·¦ä¼¸ç¼©èœå•</div>
+        <div class="doc-icon-code">&amp;#xe668;</div>
+        <div class="doc-icon-fontclass">layui-icon-shrink-right</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-snowflake"></i>
+        <div class="doc-icon-name">é›ªèŠ±</div>
+        <div class="doc-icon-code">&amp;#xe6b1;</div>
+        <div class="doc-icon-fontclass">layui-icon-snowflake</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-tips"></i>
+        <div class="doc-icon-name">æç¤ºè¯´æ˜</div>
+        <div class="doc-icon-code">&amp;#xe702;</div>
+        <div class="doc-icon-fontclass">layui-icon-tips</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-note"></i>
+        <div class="doc-icon-name">ä¾¿ç­¾</div>
+        <div class="doc-icon-code">&amp;#xe66e;</div>
+        <div class="doc-icon-fontclass">layui-icon-note</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-home"></i>
+        <div class="doc-icon-name">ä¸»é¡µ</div>
+        <div class="doc-icon-code">&amp;#xe68e;</div>
+        <div class="doc-icon-fontclass">layui-icon-home</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-senior"></i>
+        <div class="doc-icon-name">é«˜çº§</div>
+        <div class="doc-icon-code">&amp;#xe674;</div>
+        <div class="doc-icon-fontclass">layui-icon-senior</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-refresh"></i>
+        <div class="doc-icon-name">åˆ·æ–°</div>
+        <div class="doc-icon-code">&amp;#xe669;</div>
+        <div class="doc-icon-fontclass">layui-icon-refresh</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-refresh-1"></i>
+        <div class="doc-icon-name">åˆ·æ–°</div>
+        <div class="doc-icon-code">&amp;#xe666;</div>
+        <div class="doc-icon-fontclass">layui-icon-refresh-1</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-flag"></i>
+        <div class="doc-icon-name">æ——å¸œ</div>
+        <div class="doc-icon-code">&amp;#xe66c;</div>
+        <div class="doc-icon-fontclass">layui-icon-flag</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-theme"></i>
+        <div class="doc-icon-name">ä¸»é¢˜</div>
+        <div class="doc-icon-code">&amp;#xe66a;</div>
+        <div class="doc-icon-fontclass">layui-icon-theme</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-notice"></i>
+        <div class="doc-icon-name">æ¶ˆæ¯-é€šçŸ¥</div>
+        <div class="doc-icon-code">&amp;#xe667;</div>
+        <div class="doc-icon-fontclass">layui-icon-notice</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-website"></i>
+        <div class="doc-icon-name">ç½‘ç«™</div>
+        <div class="doc-icon-code">&amp;#xe7ae;</div>
+        <div class="doc-icon-fontclass">layui-icon-website</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-console"></i>
+        <div class="doc-icon-name">æ§åˆ¶å°</div>
+        <div class="doc-icon-code">&amp;#xe665;</div>
+        <div class="doc-icon-fontclass">layui-icon-console</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-face-surprised"></i>
+        <div class="doc-icon-name">è¡¨æƒ…-æƒŠè®¶</div>
+        <div class="doc-icon-code">&amp;#xe664;</div>
+        <div class="doc-icon-fontclass">layui-icon-face-surprised</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-set"></i>
+        <div class="doc-icon-name">è®¾ç½®-ç©ºå¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe716;</div>
+        <div class="doc-icon-fontclass">layui-icon-set</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-template-1"></i>
+        <div class="doc-icon-name">æ¨¡æ¿</div>
+        <div class="doc-icon-code">&amp;#xe656;</div>
+        <div class="doc-icon-fontclass">layui-icon-template-1</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-app"></i>
+        <div class="doc-icon-name">åº”ç”¨</div>
+        <div class="doc-icon-code">&amp;#xe653;</div>
+        <div class="doc-icon-fontclass">layui-icon-app</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-template"></i>
+        <div class="doc-icon-name">æ¨¡æ¿</div>
+        <div class="doc-icon-code">&amp;#xe663;</div>
+        <div class="doc-icon-fontclass">layui-icon-template</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-praise"></i>
+        <div class="doc-icon-name">èµ</div>
+        <div class="doc-icon-code">&amp;#xe6c6;</div>
+        <div class="doc-icon-fontclass">layui-icon-praise</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-tread"></i>
+        <div class="doc-icon-name">è¸©</div>
+        <div class="doc-icon-code">&amp;#xe6c5;</div>
+        <div class="doc-icon-fontclass">layui-icon-tread</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-male"></i>
+        <div class="doc-icon-name">ç”·</div>
+        <div class="doc-icon-code">&amp;#xe662;</div>
+        <div class="doc-icon-fontclass">layui-icon-male</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-female"></i>
+        <div class="doc-icon-name">å¥³</div>
+        <div class="doc-icon-code">&amp;#xe661;</div>
+        <div class="doc-icon-fontclass">layui-icon-female</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-camera"></i>
+        <div class="doc-icon-name">ç›¸æœº-ç©ºå¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe660;</div>
+        <div class="doc-icon-fontclass">layui-icon-camera</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-camera-fill"></i>
+        <div class="doc-icon-name">ç›¸æœº-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe65d;</div>
+        <div class="doc-icon-fontclass">layui-icon-camera-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-more"></i>
+        <div class="doc-icon-name">èœå•-æ°´å¹³</div>
+        <div class="doc-icon-code">&amp;#xe65f;</div>
+        <div class="doc-icon-fontclass">layui-icon-more</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-more-vertical"></i>
+        <div class="doc-icon-name">èœå•-å‚ç›´</div>
+        <div class="doc-icon-code">&amp;#xe671;</div>
+        <div class="doc-icon-fontclass">layui-icon-more-vertical</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-rmb"></i>
+        <div class="doc-icon-name">é‡‘é¢-äººæ°‘å¸</div>
+        <div class="doc-icon-code">&amp;#xe65e;</div>
+        <div class="doc-icon-fontclass">layui-icon-rmb</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-dollar"></i>
+        <div class="doc-icon-name">é‡‘é¢-ç¾å…ƒ</div>
+        <div class="doc-icon-code">&amp;#xe659;</div>
+        <div class="doc-icon-fontclass">layui-icon-dollar</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-diamond"></i>
+        <div class="doc-icon-name">é’»çŸ³-ç­‰çº§</div>
+        <div class="doc-icon-code">&amp;#xe735;</div>
+        <div class="doc-icon-fontclass">layui-icon-diamond</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-fire"></i>
+        <div class="doc-icon-name">ç«</div>
+        <div class="doc-icon-code">&amp;#xe756;</div>
+        <div class="doc-icon-fontclass">layui-icon-fire</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-return"></i>
+        <div class="doc-icon-name">è¿”å›</div>
+        <div class="doc-icon-code">&amp;#xe65c;</div>
+        <div class="doc-icon-fontclass">layui-icon-return</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-location"></i>
+        <div class="doc-icon-name">ä½ç½®-åœ°å›¾</div>
+        <div class="doc-icon-code">&amp;#xe715;</div>
+        <div class="doc-icon-fontclass">layui-icon-location</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-read"></i>
+        <div class="doc-icon-name">åŠå…¬-é˜…è¯»</div>
+        <div class="doc-icon-code">&amp;#xe705;</div>
+        <div class="doc-icon-fontclass">layui-icon-read</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-survey"></i>
+        <div class="doc-icon-name">è°ƒæŸ¥</div>
+        <div class="doc-icon-code">&amp;#xe6b2;</div>
+        <div class="doc-icon-fontclass">layui-icon-survey</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-face-smile"></i>
+        <div class="doc-icon-name">è¡¨æƒ…-å¾®ç¬‘</div>
+        <div class="doc-icon-code">&amp;#xe6af;</div>
+        <div class="doc-icon-fontclass">layui-icon-face-smile</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-face-cry"></i>
+        <div class="doc-icon-name">è¡¨æƒ…-å“­æ³£</div>
+        <div class="doc-icon-code">&amp;#xe69c;</div>
+        <div class="doc-icon-fontclass">layui-icon-face-cry</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-cart-simple"></i>
+        <div class="doc-icon-name">è´­ç‰©è½¦</div>
+        <div class="doc-icon-code">&amp;#xe698;</div>
+        <div class="doc-icon-fontclass">layui-icon-cart-simple</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-cart"></i>
+        <div class="doc-icon-name">è´­ç‰©è½¦</div>
+        <div class="doc-icon-code">&amp;#xe657;</div>
+        <div class="doc-icon-fontclass">layui-icon-cart</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-next"></i>
+        <div class="doc-icon-name">ä¸‹ä¸€é¡µ</div>
+        <div class="doc-icon-code">&amp;#xe65b;</div>
+        <div class="doc-icon-fontclass">layui-icon-next</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-prev"></i>
+        <div class="doc-icon-name">ä¸Šä¸€é¡µ</div>
+        <div class="doc-icon-code">&amp;#xe65a;</div>
+        <div class="doc-icon-fontclass">layui-icon-prev</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-upload-drag"></i>
+        <div class="doc-icon-name">ä¸Šä¼ -ç©ºå¿ƒ-æ‹–æ‹½</div>
+        <div class="doc-icon-code">&amp;#xe681;</div>
+        <div class="doc-icon-fontclass">layui-icon-upload-drag</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-upload"></i>
+        <div class="doc-icon-name">ä¸Šä¼ -å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe67c;</div>
+        <div class="doc-icon-fontclass">layui-icon-upload</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-download-circle"></i>
+        <div class="doc-icon-name">ä¸‹è½½-åœ†åœˆ</div>
+        <div class="doc-icon-code">&amp;#xe601;</div>
+        <div class="doc-icon-fontclass">layui-icon-download-circle</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-component"></i>
+        <div class="doc-icon-name">ç»„ä»¶</div>
+        <div class="doc-icon-code">&amp;#xe857;</div>
+        <div class="doc-icon-fontclass">layui-icon-component</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-file-b"></i>
+        <div class="doc-icon-name">æ–‡ä»¶-ç²—</div>
+        <div class="doc-icon-code">&amp;#xe655;</div>
+        <div class="doc-icon-fontclass">layui-icon-file-b</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-user"></i>
+        <div class="doc-icon-name">ç”¨æˆ·</div>
+        <div class="doc-icon-code">&amp;#xe770;</div>
+        <div class="doc-icon-fontclass">layui-icon-user</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-find-fill"></i>
+        <div class="doc-icon-name">å‘ç°-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe670;</div>
+        <div class="doc-icon-fontclass">layui-icon-find-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-loading layui-icon layui-anim layui-anim-rotate layui-anim-loop"></i>
+        <div class="doc-icon-name">loading</div>
+        <div class="doc-icon-code">&amp;#xe63d;</div>
+        <div class="doc-icon-fontclass">layui-icon-loading</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-loading-1 layui-icon layui-anim layui-anim-rotate layui-anim-loop"></i>
+        <div class="doc-icon-name">loading</div>
+        <div class="doc-icon-code">&amp;#xe63e;</div>
+        <div class="doc-icon-fontclass">layui-icon-loading-1</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-add-1"></i>
+        <div class="doc-icon-name">æ·»åŠ </div>
+        <div class="doc-icon-code">&amp;#xe654;</div>
+        <div class="doc-icon-fontclass">layui-icon-add-1</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-play"></i>
+        <div class="doc-icon-name">æ’­æ”¾</div>
+        <div class="doc-icon-code">&amp;#xe652;</div>
+        <div class="doc-icon-fontclass">layui-icon-play</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-pause"></i>
+        <div class="doc-icon-name">æš‚åœ</div>
+        <div class="doc-icon-code">&amp;#xe651;</div>
+        <div class="doc-icon-fontclass">layui-icon-pause</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-headset"></i>
+        <div class="doc-icon-name">éŸ³é¢‘-è€³æœº</div>
+        <div class="doc-icon-code">&amp;#xe6fc;</div>
+        <div class="doc-icon-fontclass">layui-icon-headset</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-video"></i>
+        <div class="doc-icon-name">è§†é¢‘</div>
+        <div class="doc-icon-code">&amp;#xe6ed;</div>
+        <div class="doc-icon-fontclass">layui-icon-video</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-voice"></i>
+        <div class="doc-icon-name">è¯­éŸ³-å£°éŸ³</div>
+        <div class="doc-icon-code">&amp;#xe688;</div>
+        <div class="doc-icon-fontclass">layui-icon-voice</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-speaker"></i>
+        <div class="doc-icon-name">æ¶ˆæ¯-é€šçŸ¥-å–‡å­</div>
+        <div class="doc-icon-code">&amp;#xe645;</div>
+        <div class="doc-icon-fontclass">layui-icon-speaker</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-fonts-del"></i>
+        <div class="doc-icon-name">åˆ é™¤çº¿</div>
+        <div class="doc-icon-code">&amp;#xe64f;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-del</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-fonts-code"></i>
+        <div class="doc-icon-name">ä»£ç </div>
+        <div class="doc-icon-code">&amp;#xe64e;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-code</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-fonts-html"></i>
+        <div class="doc-icon-name">HTML</div>
+        <div class="doc-icon-code">&amp;#xe64b;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-html</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-fonts-strong"></i>
+        <div class="doc-icon-name">å­—ä½“åŠ ç²—</div>
+        <div class="doc-icon-code">&amp;#xe62b;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-strong</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-unlink"></i>
+        <div class="doc-icon-name">åˆ é™¤é“¾æ¥</div>
+        <div class="doc-icon-code">&amp;#xe64d;</div>
+        <div class="doc-icon-fontclass">layui-icon-unlink</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-picture"></i>
+        <div class="doc-icon-name">å›¾ç‰‡</div>
+        <div class="doc-icon-code">&amp;#xe64a;</div>
+        <div class="doc-icon-fontclass">layui-icon-picture</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-link"></i>
+        <div class="doc-icon-name">é“¾æ¥</div>
+        <div class="doc-icon-code">&amp;#xe64c;</div>
+        <div class="doc-icon-fontclass">layui-icon-link</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-face-smile-b"></i>
+        <div class="doc-icon-name">è¡¨æƒ…-ç¬‘-ç²—</div>
+        <div class="doc-icon-code">&amp;#xe650;</div>
+        <div class="doc-icon-fontclass">layui-icon-face-smile-b</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-align-left"></i>
+        <div class="doc-icon-name">å·¦å¯¹é½</div>
+        <div class="doc-icon-code">&amp;#xe649;</div>
+        <div class="doc-icon-fontclass">layui-icon-align-left</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-align-right"></i>
+        <div class="doc-icon-name">å³å¯¹é½</div>
+        <div class="doc-icon-code">&amp;#xe648;</div>
+        <div class="doc-icon-fontclass">layui-icon-align-right</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-align-center"></i>
+        <div class="doc-icon-name">å±…ä¸­å¯¹é½</div>
+        <div class="doc-icon-code">&amp;#xe647;</div>
+        <div class="doc-icon-fontclass">layui-icon-align-center</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-fonts-u"></i>
+        <div class="doc-icon-name">å­—ä½“-ä¸‹åˆ’çº¿</div>
+        <div class="doc-icon-code">&amp;#xe646;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-u</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-fonts-i"></i>
+        <div class="doc-icon-name">å­—ä½“-æ–œä½“</div>
+        <div class="doc-icon-code">&amp;#xe644;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-i</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-tabs"></i>
+        <div class="doc-icon-name">Tabs é€‰é¡¹å¡</div>
+        <div class="doc-icon-code">&amp;#xe62a;</div>
+        <div class="doc-icon-fontclass">layui-icon-tabs</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-radio"></i>
+        <div class="doc-icon-name">å•é€‰æ¡†-é€‰ä¸­</div>
+        <div class="doc-icon-code">&amp;#xe643;</div>
+        <div class="doc-icon-fontclass">layui-icon-radio</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-circle"></i>
+        <div class="doc-icon-name">å•é€‰æ¡†-å€™é€‰</div>
+        <div class="doc-icon-code">&amp;#xe63f;</div>
+        <div class="doc-icon-fontclass">layui-icon-circle</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-edit"></i>
+        <div class="doc-icon-name">ç¼–è¾‘</div>
+        <div class="doc-icon-code">&amp;#xe642;</div>
+        <div class="doc-icon-fontclass">layui-icon-edit</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-share"></i>
+        <div class="doc-icon-name">åˆ†äº«</div>
+        <div class="doc-icon-code">&amp;#xe641;</div>
+        <div class="doc-icon-fontclass">layui-icon-share</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-delete"></i>
+        <div class="doc-icon-name">åˆ é™¤</div>
+        <div class="doc-icon-code">&amp;#xe640;</div>
+        <div class="doc-icon-fontclass">layui-icon-delete</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-form"></i>
+        <div class="doc-icon-name">è¡¨å•</div>
+        <div class="doc-icon-code">&amp;#xe63c;</div>
+        <div class="doc-icon-fontclass">layui-icon-form</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-cellphone-fine"></i>
+        <div class="doc-icon-name">æ‰‹æœº-ç»†ä½“</div>
+        <div class="doc-icon-code">&amp;#xe63b;</div>
+        <div class="doc-icon-fontclass">layui-icon-cellphone-fine</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-dialogue"></i>
+        <div class="doc-icon-name">èŠå¤© å¯¹è¯ æ²Ÿé€š</div>
+        <div class="doc-icon-code">&amp;#xe63a;</div>
+        <div class="doc-icon-fontclass">layui-icon-dialogue</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-fonts-clear"></i>
+        <div class="doc-icon-name">æ–‡å­—æ ¼å¼åŒ–</div>
+        <div class="doc-icon-code">&amp;#xe639;</div>
+        <div class="doc-icon-fontclass">layui-icon-fonts-clear</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-layer"></i>
+        <div class="doc-icon-name">çª—å£</div>
+        <div class="doc-icon-code">&amp;#xe638;</div>
+        <div class="doc-icon-fontclass">layui-icon-layer</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-date"></i>
+        <div class="doc-icon-name">æ—¥æœŸ</div>
+        <div class="doc-icon-code">&amp;#xe637;</div>
+        <div class="doc-icon-fontclass">layui-icon-date</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-water"></i>
+        <div class="doc-icon-name">æ°´ ä¸‹é›¨</div>
+        <div class="doc-icon-code">&amp;#xe636;</div>
+        <div class="doc-icon-fontclass">layui-icon-water</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-code-circle"></i>
+        <div class="doc-icon-name">ä»£ç -åœ†åœˆ</div>
+        <div class="doc-icon-code">&amp;#xe635;</div>
+        <div class="doc-icon-fontclass">layui-icon-code-circle</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-carousel"></i>
+        <div class="doc-icon-name">è½®æ’­ç»„å›¾</div>
+        <div class="doc-icon-code">&amp;#xe634;</div>
+        <div class="doc-icon-fontclass">layui-icon-carousel</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-prev-circle"></i>
+        <div class="doc-icon-name">ç¿»é¡µ</div>
+        <div class="doc-icon-code">&amp;#xe633;</div>
+        <div class="doc-icon-fontclass">layui-icon-prev-circle</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-layouts"></i>
+        <div class="doc-icon-name">å¸ƒå±€</div>
+        <div class="doc-icon-code">&amp;#xe632;</div>
+        <div class="doc-icon-fontclass">layui-icon-layouts</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-util"></i>
+        <div class="doc-icon-name">å·¥å…·</div>
+        <div class="doc-icon-code">&amp;#xe631;</div>
+        <div class="doc-icon-fontclass">layui-icon-util</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-templeate-1"></i>
+        <div class="doc-icon-name">é€‰æ‹©æ¨¡æ¿</div>
+        <div class="doc-icon-code">&amp;#xe630;</div>
+        <div class="doc-icon-fontclass">layui-icon-templeate-1</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-upload-circle"></i>
+        <div class="doc-icon-name">ä¸Šä¼ -åœ†åœˆ</div>
+        <div class="doc-icon-code">&amp;#xe62f;</div>
+        <div class="doc-icon-fontclass">layui-icon-upload-circle</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-tree"></i>
+        <div class="doc-icon-name">æ ‘</div>
+        <div class="doc-icon-code">&amp;#xe62e;</div>
+        <div class="doc-icon-fontclass">layui-icon-tree</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-table"></i>
+        <div class="doc-icon-name">è¡¨æ ¼</div>
+        <div class="doc-icon-code">&amp;#xe62d;</div>
+        <div class="doc-icon-fontclass">layui-icon-table</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-chart"></i>
+        <div class="doc-icon-name">å›¾è¡¨</div>
+        <div class="doc-icon-code">&amp;#xe62c;</div>
+        <div class="doc-icon-fontclass">layui-icon-chart</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-chart-screen"></i>
+        <div class="doc-icon-name">å›¾æ ‡ æŠ¥è¡¨ å±å¹•</div>
+        <div class="doc-icon-code">&amp;#xe629;</div>
+        <div class="doc-icon-fontclass">layui-icon-chart-screen</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-engine"></i>
+        <div class="doc-icon-name">å¼•æ“</div>
+        <div class="doc-icon-code">&amp;#xe628;</div>
+        <div class="doc-icon-fontclass">layui-icon-engine</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-triangle-d"></i>
+        <div class="doc-icon-name">ä¸‹ä¸‰è§’</div>
+        <div class="doc-icon-code">&amp;#xe625;</div>
+        <div class="doc-icon-fontclass">layui-icon-triangle-d</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-triangle-r"></i>
+        <div class="doc-icon-name">å³ä¸‰è§’</div>
+        <div class="doc-icon-code">&amp;#xe623;</div>
+        <div class="doc-icon-fontclass">layui-icon-triangle-r</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-file"></i>
+        <div class="doc-icon-name">æ–‡ä»¶</div>
+        <div class="doc-icon-code">&amp;#xe621;</div>
+        <div class="doc-icon-fontclass">layui-icon-file</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-set-sm"></i>
+        <div class="doc-icon-name">è®¾ç½®-å°å‹</div>
+        <div class="doc-icon-code">&amp;#xe620;</div>
+        <div class="doc-icon-fontclass">layui-icon-set-sm</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-add-circle"></i>
+        <div class="doc-icon-name">æ·»åŠ -åœ†åœˆ</div>
+        <div class="doc-icon-code">&amp;#xe61f;</div>
+        <div class="doc-icon-fontclass">layui-icon-add-circle</div>
+      </li>
+      
+      
+      <li>
+        <i class="layui-icon layui-icon-404"></i>
+        <div class="doc-icon-name">404</div>
+        <div class="doc-icon-code">&amp;#xe61c;</div>
+        <div class="doc-icon-fontclass">layui-icon-404</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-about"></i>
+        <div class="doc-icon-name">å…³äº</div>
+        <div class="doc-icon-code">&amp;#xe60b;</div>
+        <div class="doc-icon-fontclass">layui-icon-about</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-up"></i>
+        <div class="doc-icon-name">ç®­å¤´ å‘ä¸Š</div>
+        <div class="doc-icon-code">&amp;#xe619;</div>
+        <div class="doc-icon-fontclass">layui-icon-up</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-down"></i>
+        <div class="doc-icon-name">ç®­å¤´ å‘ä¸‹</div>
+        <div class="doc-icon-code">&amp;#xe61a;</div>
+        <div class="doc-icon-fontclass">layui-icon-down</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-left"></i>
+        <div class="doc-icon-name">ç®­å¤´ å‘å·¦</div>
+        <div class="doc-icon-code">&amp;#xe603;</div>
+        <div class="doc-icon-fontclass">layui-icon-left</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-right"></i>
+        <div class="doc-icon-name">ç®­å¤´ å‘å³</div>
+        <div class="doc-icon-code">&amp;#xe602;</div>
+        <div class="doc-icon-fontclass">layui-icon-right</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-circle-dot"></i>
+        <div class="doc-icon-name">åœ†ç‚¹</div>
+        <div class="doc-icon-code">&amp;#xe617;</div>
+        <div class="doc-icon-fontclass">layui-icon-circle-dot</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-search"></i>
+        <div class="doc-icon-name">æœç´¢</div>
+        <div class="doc-icon-code">&amp;#xe615;</div>
+        <div class="doc-icon-fontclass">layui-icon-search</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-set-fill"></i>
+        <div class="doc-icon-name">è®¾ç½®-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe614;</div>
+        <div class="doc-icon-fontclass">layui-icon-set-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-group"></i>
+        <div class="doc-icon-name">ç¾¤ç»„</div>
+        <div class="doc-icon-code">&amp;#xe613;</div>
+        <div class="doc-icon-fontclass">layui-icon-group</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-friends"></i>
+        <div class="doc-icon-name">å¥½å‹</div>
+        <div class="doc-icon-code">&amp;#xe612;</div>
+        <div class="doc-icon-fontclass">layui-icon-friends</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-reply-fill"></i>
+        <div class="doc-icon-name">å›å¤ è¯„è®º å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe611;</div>
+        <div class="doc-icon-fontclass">layui-icon-reply-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-menu-fill"></i>
+        <div class="doc-icon-name">èœå• éšèº« å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe60f;</div>
+        <div class="doc-icon-fontclass">layui-icon-menu-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-log"></i>
+        <div class="doc-icon-name">è®°å½•</div>
+        <div class="doc-icon-code">&amp;#xe60e;</div>
+        <div class="doc-icon-fontclass">layui-icon-log</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-picture-fine"></i>
+        <div class="doc-icon-name">å›¾ç‰‡-ç»†ä½“</div>
+        <div class="doc-icon-code">&amp;#xe60d;</div>
+        <div class="doc-icon-fontclass">layui-icon-picture-fine</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-face-smile-fine"></i>
+        <div class="doc-icon-name">è¡¨æƒ…-ç¬‘-ç»†ä½“</div>
+        <div class="doc-icon-code">&amp;#xe60c;</div>
+        <div class="doc-icon-fontclass">layui-icon-face-smile-fine</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-list"></i>
+        <div class="doc-icon-name">åˆ—è¡¨</div>
+        <div class="doc-icon-code">&amp;#xe60a;</div>
+        <div class="doc-icon-fontclass">layui-icon-list</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-release"></i>
+        <div class="doc-icon-name">å‘å¸ƒ çº¸é£æœº</div>
+        <div class="doc-icon-code">&amp;#xe609;</div>
+        <div class="doc-icon-fontclass">layui-icon-release</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-ok"></i>
+        <div class="doc-icon-name">å¯¹ OK</div>
+        <div class="doc-icon-code">&amp;#xe605;</div>
+        <div class="doc-icon-fontclass">layui-icon-ok</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-help"></i>
+        <div class="doc-icon-name">å¸®åŠ©</div>
+        <div class="doc-icon-code">&amp;#xe607;</div>
+        <div class="doc-icon-fontclass">layui-icon-help</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-chat"></i>
+        <div class="doc-icon-name">å®¢æœ</div>
+        <div class="doc-icon-code">&amp;#xe606;</div>
+        <div class="doc-icon-fontclass">layui-icon-chat</div>
+      </li>
+      
+      <li>
+        <i class="layui-icon layui-icon-top"></i>
+        <div class="doc-icon-name">top ç½®é¡¶</div>
+        <div class="doc-icon-code">&amp;#xe604;</div>
+        <div class="doc-icon-fontclass">layui-icon-top</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-star"></i>
+        <div class="doc-icon-name">æ”¶è—-ç©ºå¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe600;</div>
+        <div class="doc-icon-fontclass">layui-icon-star</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-star-fill"></i>
+        <div class="doc-icon-name">æ”¶è—-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#xe658;</div>
+        <div class="doc-icon-fontclass">layui-icon-star-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-close-fill"></i>
+        <div class="doc-icon-name">å…³é—­-å®å¿ƒ</div>
+        <div class="doc-icon-code">&amp;#x1007;</div>
+        <div class="doc-icon-fontclass">layui-icon-close-fill</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-close"></i>
+        <div class="doc-icon-name">å…³é—­-ç©ºå¿ƒ</div>
+        <div class="doc-icon-code">&amp;#x1006;</div>
+        <div class="doc-icon-fontclass">layui-icon-close</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-ok-circle"></i>
+        <div class="doc-icon-name">æ­£ç¡®</div>
+        <div class="doc-icon-code">&amp;#x1005;</div>
+        <div class="doc-icon-fontclass">layui-icon-ok-circle</div>
+      </li>
+      <li>
+        <i class="layui-icon layui-icon-add-circle-fine"></i>
+        <div class="doc-icon-name">æ·»åŠ -åœ†åœˆ-ç»†ä½“</div>
+        <div class="doc-icon-code">&amp;#xe608;</div>
+        <div class="doc-icon-fontclass">layui-icon-add-circle-fine</div>
+      </li>
+    </ul>
+    
+    <div class="site-title">
+      <fieldset><legend><a name="access">è·¨åŸŸé—®é¢˜çš„è§£å†³</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>ç”±äºæµè§ˆå™¨å­˜åœ¨åŒæºç­–ç•¥ï¼Œæ‰€ä»¥å¦‚æœlayuiï¼ˆé‡Œé¢å«å›¾æ ‡å­—ä½“æ–‡ä»¶ï¼‰æ‰€åœ¨çš„åœ°å€ä¸ä½ å½“å‰çš„é¡µé¢åœ°å€<em>ä¸åœ¨åŒä¸€ä¸ªåŸŸä¸‹</em>ï¼Œå³ä¼šå‡ºç°å›¾æ ‡è·¨åŸŸé—®é¢˜ã€‚æ‰€ä»¥è¦ä¹ˆä½ å°±æŠŠLayuiä¸ç½‘ç«™æ”¾åœ¨åŒä¸€æœåŠ¡å™¨ï¼Œè¦ä¹ˆå°±å¯¹Layuiæ‰€åœ¨çš„èµ„æºæœåŠ¡å™¨çš„Response HeadersåŠ ä¸Šå±æ€§ï¼š<em>Access-Control-Allow-Origin: *</em> </p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>layui - ç”¨å¿ƒä¸ä½ æ²Ÿé€š</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>&copy; 2018 <a href="javascript:if(confirm('http://www.layui.com/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://www.layui.com/'" tppabs="http://www.layui.com/">layui.com</a> MIT license</p>
+    <p>
+      <a href="javascript:if(confirm('http://fly.layui.com/case/2018/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/case/2018/'" tppabs="http://fly.layui.com/case/2018/" target="_blank">æ¡ˆä¾‹</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/3147/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/3147/'" tppabs="http://fly.layui.com/jie/3147/" target="_blank">æ”¯æŒ</a>
+      <a href="javascript:;" site-event="contactInfo">è”ç³»</a>
+      <a href="javascript:if(confirm('https://github.com/sentsin/layui/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://github.com/sentsin/layui/'" tppabs="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+      <a href="javascript:if(confirm('https://gitee.com/sentsin/layui  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://gitee.com/sentsin/layui'" tppabs="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">ç äº‘</a>
+      <a href="javascript:if(confirm('http://fly.layui.com/jie/2461/  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ËüµÄÓò»òÂ·¾¶³¬¹ı¿ªÊ¼ÍøÖ·ÖĞÉèÖÃµÄ·¶Î§¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='http://fly.layui.com/jie/2461/'" tppabs="http://fly.layui.com/jie/2461/" target="_blank">å¾®ä¿¡å…¬ä¼—å·</a>
+    </p>
+    <p class="site-union">
+      <a href="javascript:if(confirm('https://www.upyun.com/?from=layui  \n\nÎÄ¼ş²¢Î´ÒÀ Teleport Pro È¡»Ø£¬ÒòÎª ´ËÒ»µØÖ·Ê¹ÓÃÉĞÎ´Ö§³ÖµÄĞ­Òé (ÀıÈç£¬gopher)¡£  \n\nÄãÒª´Ó·şÎñÆ÷ÉÏ´ò¿ªËüÂğ£¿'))window.location='https://www.upyun.com/?from=layui'" tppabs="https://www.upyun.com/?from=layui" target="_blank" rel="nofollow" upyun><img src="../../../res.layui.com/static/images/other/upyun.png-t=1" tppabs="http://res.layui.com/static/images/other/upyun.png?t=1"></a>
+      <span>æä¾› CDN èµåŠ©</span>
+    </p>
+  </div>
+</div>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../res.layui.com/layui/dist/layui.js-t=1531663423583" tppabs="http://res.layui.com/layui/dist/layui.js?t=1531663423583" charset="utf-8"></script>
+<script>
+window.global = {
+  pageType: 'doc'
+  ,preview: function(){
+    var preview = document.getElementById('LAY_preview');
+    return preview ? preview.innerHTML : '';
+  }()
+};
+layui.config({
+  base: '//res.layui.com/static/lay/modules/layui/'
+  ,version: '1531663423583'
+}).use('global');
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30088308'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30088308' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>
+</script>
+</body>
+</html>
